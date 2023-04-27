@@ -1,0 +1,15 @@
+<main class="index">
+    <header class="masthead d-flex">
+        <div class="container text-center mx-auto">
+            <h1 class="mb-1">Control de Expedientes</h1>
+            <h3 class="mb-5">
+                <em>v1.0</em>
+            </h3>                    
+	{{#if user}}
+            <a href="/profile" class="text-white bg-red-700 hover:bg-red-800 focus:outline-none focus:ring-4 focus:ring-red-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900"><i class="fa fa-spinner" aria-hidden="true"></i> Sesión Iniciada</a>
+            {{else}}
+            <a href="/signin" class="text-white bg-green-700 hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"><i class="fa fa-clone" aria-hidden="true"></i> Ingresa a tu perfil</a>
+            {{/if}}
+        </div>
+    </header>
+</main>
